@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Loja
+comment1.params=
+comment1.target=Loja()
+comment2.params=emailAux\ nomeAux\ passwordAux\ localizacaoAux\ tempoEsperaAux
+comment2.target=Loja(java.lang.String,\ java.lang.String,\ java.lang.String,\ Localizacao,\ double)
+comment3.params=c
+comment3.target=Loja(Loja)
+comment4.params=
+comment4.target=double\ getTempoEspera()
+comment5.params=tempoEsperaAux
+comment5.target=void\ setTempoEspera(double)
+comment6.params=object
+comment6.target=boolean\ equals(java.lang.Object)
+comment7.params=
+comment7.target=Loja\ clone()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

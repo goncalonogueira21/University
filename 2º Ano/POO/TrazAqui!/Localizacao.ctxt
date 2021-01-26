@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Localizacao
+comment1.params=cx\ cy
+comment1.target=Localizacao(double,\ double)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment11.params=
+comment11.target=Localizacao\ clone()
+comment2.params=
+comment2.target=Localizacao()
+comment3.params=l
+comment3.target=Localizacao(Localizacao)
+comment4.params=
+comment4.target=double\ getX()
+comment5.params=
+comment5.target=double\ getY()
+comment6.params=dx\ dy
+comment6.target=void\ incCoord(double,\ double)
+comment7.params=dx\ dy
+comment7.target=void\ decCoord(double,\ double)
+comment8.params=dx\ dy
+comment8.target=Localizacao\ somaPonto(double,\ double)
+comment9.params=o
+comment9.target=boolean\ equals(java.lang.Object)
+numComments=12

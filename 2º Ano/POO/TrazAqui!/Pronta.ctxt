@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Pronta
+comment0.text=\r\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ classe\ Pronta\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
+comment1.params=
+comment1.target=Pronta()
+comment10.params=
+comment10.target=Pronta\ clone()
+comment2.params=idAux\ clienteAux\ lojaAux\ pesoAux\ stateAux\ dataAux\ respostaClienteAux\ flagLojaProntaAux\ l\ empresaAux\ precoAux
+comment2.target=Pronta(java.lang.String,\ Cliente,\ Loja,\ double,\ boolean,\ java.time.LocalDate,\ boolean,\ boolean,\ java.util.ArrayList,\ Empresa,\ double)
+comment3.params=p
+comment3.target=Pronta(Pronta)
+comment4.params=
+comment4.target=Empresa\ getEmpresa()
+comment5.params=
+comment5.target=double\ getPreco()
+comment6.params=e
+comment6.target=void\ setEmpresa(Empresa)
+comment7.params=preco
+comment7.target=void\ setPreco(double)
+comment8.params=o
+comment8.target=boolean\ equals(java.lang.Object)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=11

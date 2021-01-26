@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=GestaoLojas
+comment1.params=
+comment1.target=GestaoLojas()
+comment10.params=e
+comment10.target=boolean\ verifica(java.lang.String)
+comment11.params=email\ password
+comment11.target=boolean\ login(java.lang.String,\ java.lang.String)
+comment12.params=mail
+comment12.target=Loja\ buscaLoja(java.lang.String)
+comment2.params=lojas2
+comment2.target=GestaoLojas(java.util.HashMap)
+comment3.params=gcs
+comment3.target=GestaoLojas(GestaoLojas)
+comment4.params=
+comment4.target=java.util.HashMap\ getLoja()
+comment5.params=lojas2
+comment5.target=void\ setLoja(java.util.HashMap)
+comment6.params=object
+comment6.target=boolean\ equals(java.lang.Object)
+comment7.params=
+comment7.target=GestaoLojas\ clone()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment9.params=a
+comment9.target=void\ addLoja(Loja)
+numComments=13
