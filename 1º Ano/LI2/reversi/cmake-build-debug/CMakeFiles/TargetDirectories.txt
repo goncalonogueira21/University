@@ -1,0 +1,3 @@
+C:/Users/g1nog/Desktop/bikes/cmake-build-debug/CMakeFiles/proj_1_.dir
+C:/Users/g1nog/Desktop/bikes/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/g1nog/Desktop/bikes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
