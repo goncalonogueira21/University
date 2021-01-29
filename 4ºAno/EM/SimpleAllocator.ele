@@ -1,0 +1,61 @@
+// Specification of an allocator managing a set of resources:          
+// Clients can request sets of resources whenever all their previous 
+//  requests have been satisfied.                                     
+// Requests can be partly fulfilled, and resources can be returned   
+// even before the full request has been satisfied. However, clients 
+//   only have an obligation to return resources after they have       
+// obtained all resources they requested.
+
+
+sig Client {
+	var unsat : set Resources,
+	var alloc : set Resources
+}
+
+sig Resources{}
+
+fact init{
+	no unsat
+	no alloc
+}
+
+pred Request[c:Client, s:Resources]{
+	no c.unsat and no c.alloc
+	c.unsat'=s
+	c.alloc'=c.alloc
+	all : c1:Client - c | c1.unsat'=c1.unsat
+	all : c1:Client - c | c1.alloc'=c1.alloc 
+}
+
+
+fun available : set Resources {
+	{s : Resources , c:Client | (x: c.alloc | s not in x)}
+}
+
+pred Allocate[c:Client, s:Resources]{
+	s in available
+	c.alloc'=c.alloc +s
+	c.unsat'=c.unsat-s
+	all : c1:Client - c | c1.unsat'=c1.unsat
+	all : c1:Client - c | c1.alloc'=c1.alloc 
+}
+
+pred Return[c:Client, s:Resources]{
+	some i: c.alloc{
+		c.unsat'=c.unsat
+		c.alloc'=c.alloc-i
+	}
+	all : c1:Client - c | c1.unsat'=c1.unsat
+	all : c1:Client - c | c1.alloc'=c1.alloc 
+
+}
+
+
+fact transitions {
+	always (skip or some (c:Client, s:Resources) | Request[c,S] or Allocate[c,S] or Return[c,s] )
+}
+
+
+
+
+
