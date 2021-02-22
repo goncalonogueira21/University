@@ -1,0 +1,16 @@
+%--------------------------------- - - - - - - - - - -  -  -  -  -   -
+% SIST. REPR. CONHECIMENTO E RACIOCINIO - MiEI/3
+
+
+
+
+%--------------------------------- - - - - - - - - - -  -  -  -  -   -
+% SICStus PROLOG: Declaracoes iniciais
+
+:- set_prolog_flag( discontiguous_warnings,off ).
+:- set_prolog_flag( single_var_warnings,off ).
+:- set_prolog_flag( unknown,fail ).
+
+
+
+soma(X,Y,X+Y).
