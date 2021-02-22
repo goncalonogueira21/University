@@ -1,0 +1,43 @@
+base de dados devera conter informações sobre o jogador como o seu numero,nome,posicao,data de nascimento, local de nascimento
+altura,peso e observações
+conter informaçoes sobre o cromo, como o seu numero, o seu tipo, onde se encontra na caderneta, a sua descrição e se ja o adquiriu ou nao
+conter informaçoes sobre  a equipa do jogador como o seu nome, localidade, treinador, ano fundacao, estadio, presidente, link do site do clube e observaçoes
+devera poder responder quantos cromos a pessoa possui e quantos faltam para completar a caderneta
+quantos cromos tem de cada equipa, quantos jogadores sao de uma localidade
+quantos jogadores possui de determinada nacionalidade
+
+
+
+CREATE SCHEMA CadernetaCromos
+
+CREATE TABLE [IF NOT EXISTS] Cromo(
+	Nr INT NOT NULL,
+	Tipo  INT NOT NULL,
+	Jogador INT,
+	Página INT NOT NULL,
+	Adquirido CHAR(1) NOT NULL,
+	Descricao TEXT,
+	PRIMARY KEY(Nr),
+	FOREIGN KEY(Tipo),
+		REFERENCES TipoCromo(Nr)
+		ON DELETE NO ACTION
+		ON UPDATE NO ACTION
+	FOREIGN KEY(Jogador) REFERENCES Jogador(Nr)
+)
+//PARA APAGAR
+DROP TABLE Equipa [RESTRICTED | CASCADE]
+
+//PARA APAGAR TUDO
+DROP SCHEMA CadernetaCromos[RESTRICTED | CASCADE]
+
+//inserir
+INSERT INTO Cromo(Nr, Tipo, Jogador, Página, Adquirido)
+VALUES(1,0,7,23,'S',)
+
+
+
+
+
+
+
+
